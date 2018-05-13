@@ -1,0 +1,39 @@
+{
+  "name": "concourseq",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "babble": "^0.11.0",
+    "babel-polyfill": "^6.26.0",
+    "coingrid-sdk": "^1.0.0",
+    "dotenv": "^4.0.0",
+    "immer": "^0.7.0",
+    "react": "^15.6.2",
+    "react-async-script": "^0.9.1",
+    "react-code-splitting": "^1.2.1",
+    "react-dom": "^15.6.2",
+    "react-graceful-unmount": "^1.0.7",
+    "react-hashchange": "^0.1.0",
+    "react-highcharts": "^16.0.2",
+    "react-redux": "^5.0.6",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.0.13",
+    "redux": "^3.7.2",
+    "redux-logger": "^3.0.6",
+    "redux-promise-middleware": "^4.4.2",
+    "redux-thunk": "^2.2.0"
+  },
+  "scripts": {
+    "build-css": "node-sass-chokidar src/scss -o public/css",
+    "watch-css": "npm run build-css && node-sass-chokidar src/scss -o public/css --watch --recursive",
+    "start": "react-scripts start",
+    "build": "react-scripts build && cp build/index.html build/404.html",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "babel-minify-webpack-plugin": "^0.2.0",
+    "nodemailer": "^4.4.2"
+  }
+}
